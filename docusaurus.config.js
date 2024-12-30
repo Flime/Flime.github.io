@@ -8,20 +8,20 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '狐莱姆在盯着你...',
+  title: '狐莱姆正在跑来跑去',
   tagline: '可安可可可爱了!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://qhlg.flime.top',
+  url: 'https://flime.online',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'QHMY114514', // Usually your GitHub org/user name.
-  projectName: 'QHMY114514.github.io', // Usually your repo name.
+  organizationName: 'Flime', // Usually your GitHub org/user name.
+  projectName: 'Flime.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -48,7 +48,7 @@ const config = {
 
         },
         blog: {
-          blogSidebarTitle: '乾狐离光的日记本',
+          blogSidebarTitle: '更新日志',
           blogSidebarCount: 10,
           showReadingTime: true,
 
@@ -65,6 +65,7 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/fox.jpg',
+      /*
       announcementBar: {
         id: 'look_at_me_0',
         content:
@@ -72,44 +73,24 @@ const config = {
         backgroundColor: '#288',
         textColor: '#ddd',
         isCloseable: true,
-      },
+      },*/
       navbar: {
         hideOnScroll: true,
-        title: '乾狐之家,狐狸的衣柜!',
+        title: 'Flime的帮助文档',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/blog', label: '日记本', position: 'left' },
+          { to: '/blog', label: '更新日志', position: 'left' },
           {
-            type: 'dropdown',
-            label: '乾狐一家',
-            position: 'left',
-            items: [
-              {
-                label: '关于狐狸',
-                to: '/docs/intro',
-              },
-              {
-                label: '我的项目',
-                to: '/docs/game',
-              },
-            ],
-          },
-          {
-            to: '/docs/jrrp',
-            label: '今日人品',
+            to: '/docs/intro',
+            label: '自我介绍',
             position: 'left',
           },
           {
-            to: '/docs/song',
-            label: '来听歌吧',
-            position: 'left',
-          },
-          {
-            href: 'https://api.lolimi.cn/60/',
-            label: '每日60秒',
+            to: '/docs/command',
+            label: '指令文档',
             position: 'left',
           },
           {
@@ -126,10 +107,6 @@ const config = {
             title: '联系狐狸',
             items: [
               {
-                label: '我的哔哩哔哩主页',
-                href: 'https://space.bilibili.com/454816001',
-              },
-              {
                 label: '我的个人群(QQ)',
                 href: 'https://qm.qq.com/q/bImTc3BPsA',
               },
@@ -142,18 +119,6 @@ const config = {
           {
             title: '你想找什么?',
             items: [
-              {
-                label: '狐狸是谁?',
-                to: '/docs/intro',
-              },
-              {
-                label: '狐狸怎么叫?',
-                to: '/blog',
-              },
-              {
-                label: '小玩具',
-                to: '/docs/game',
-              },
               {
                 label: '狐狸的GitHub主页',
                 href: 'https://github.com/QHMY114514',
@@ -170,34 +135,25 @@ const config = {
               {
                 label: 'YukieBot(by 户山兔兔)',
                 href: 'https://yukiebot.top',
-              },
-              {
-                label: '桑帛云API',
-                href: 'https://api.lolimi.cn',
-              },
+              }
             ],
           },
         ],
-        copyright: `Copyright ©${new Date().getFullYear()} QHLG的小站. Built with Docusaurus.<br /><img style="width:32px;height:32px;margin-bottom:-12px" src="https://moe.one/view/img/ico64.png"></img><a href="https://icp.gov.moe/?keyword=20245009" target="_blank">萌ICP备20245009号</a>`,
+        copyright: `Copyright ©${new Date().getFullYear()} Flime Bot使用说明. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
       giscus: {
-        repo: 'QHMY114514/QHMY114514.github.io',
-        repoId: 'R_kgDONW1Hww',
+        repo: 'Flime/Flime.github.io',
+        repoId: 'R_kgDONjwLLw',
         category: 'General',
-        categoryId: 'DIC_kwDONW1Hw84ClS0T',
+        categoryId: 'DIC_kwDONjwLL84Clmde',
       }
     }),
   // Add the Cloudflare Web Analytics script
   scripts: [
-    {
-      src: 'https://static.cloudflareinsights.com/beacon.min.js',
-      async: true,
-      'data-cf-beacon': '{"token": "83e661b0d0b74b4eb1f798f1af124003"}',
-    },
   ],
 };
 
