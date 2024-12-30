@@ -150,10 +150,10 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       giscus: {
-        repo: 'FlimeBot/FlimeBot.github.io',
-        repoId: 'R_kgDONjyl-w',
+        repo: 'Flime/Flime.github.io',
+        repoId: 'R_kgDONjwLLw',
         category: 'General',
-        categoryId: 'DIC_kwDONjyl-84Clmk_',
+        categoryId: 'DIC_kwDONjwLL84Clmde',
       }
     }),
   // Add the Cloudflare Web Analytics script
