@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'FlimeBot', // Usually your GitHub org/user name.
-  projectName: 'FlimeBot.github.io', // Usually your repo name.
+  organizationName: 'Flime', // Usually your GitHub org/user name.
+  projectName: 'Flime.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
@@ -119,6 +119,10 @@ const config = {
           {
             title: '你想找什么?',
             items: [
+              {
+                label: '乾狐之家',
+                href: 'https://qhlg.flime.top',
+              },
               {
                 label: '狐狸的GitHub主页',
                 href: 'https://github.com/QHMY114514',
