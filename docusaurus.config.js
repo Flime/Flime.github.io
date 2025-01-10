@@ -147,7 +147,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright ©${new Date().getFullYear()} Flime Bot使用说明. Built with Docusaurus.`,
+        copyright: `Copyright ©${new Date().getFullYear()} Flime Bot使用说明. Built with Docusaurus.<br /><img style="width:32px;height:32px;margin-bottom:-12px" src="https://moe.one/view/img/ico64.png"></img><a href="https://icp.gov.moe/?keyword=20250509" target="_blank">萌ICP备20250509号</a>`,
       },
       prism: {
         theme: prismThemes.github,
